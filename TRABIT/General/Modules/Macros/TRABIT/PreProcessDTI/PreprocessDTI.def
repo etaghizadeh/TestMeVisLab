@@ -1,0 +1,19 @@
+//----------------------------------------------------------------------------------
+//! PreprocessDTI module definition
+/*!
+// \file    PreprocessDTI.def
+// \author  ELHAM TAGHIZADEH
+// \date    2019-02-06
+*/
+//----------------------------------------------------------------------------------
+
+
+MacroModule PreprocessDTI {
+  genre              = "FilterMain"
+  author             = "ELHAM TAGHIZADEH"
+  comment            = ""
+  keywords           = ""
+  seeAlso            = ""
+   
+  externalDefinition = "$(LOCAL)/PreprocessDTI.script"
+}

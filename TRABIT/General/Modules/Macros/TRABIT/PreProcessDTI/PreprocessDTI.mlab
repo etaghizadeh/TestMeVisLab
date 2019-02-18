@@ -1,0 +1,347 @@
+// MDL v1 utf8
+mevislabVersion = 3.1.1
+network  {
+  watchlist = ""
+}
+module AverageSiemensDTI {
+  internal  {
+    frame = "485 309 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "700 518 279 56"
+        sizeHint = "279 56"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = AverageSiemensDTI
+    sampleSize = 3
+    numberOfB = 1
+    seedValue = 0
+    optimalImage = TRUE
+    calculateTrace = FALSE
+    careUnusalDataSorting = TRUE
+  }
+}
+module Bypass {
+  internal  {
+    frame = "509 549 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = input
+    noBypass = FALSE
+  }
+}
+module Bypass {
+  internal  {
+    frame = "581 -643 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = output
+    noBypass = FALSE
+  }
+}
+module DecodeVendorSpecificDicomTags {
+  internal  {
+    frame = "445 469 232 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "764 528 150 36"
+        sizeHint = "150 36"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = DecodeVendorSpecificDicomTags
+  }
+}
+module Bypass {
+  internal  {
+    frame = "765 549 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = label
+    noBypass = FALSE
+  }
+}
+module Mask {
+  internal  {
+    frame = "665 -443 80 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = Mask
+    mode = MaskedOriginal
+    outputImageSize = InvalidateOutputIfSizesDiffer
+    blending = 0.5
+    background = 0
+  }
+}
+module Switch {
+  internal  {
+    frame = "581 -547 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "741 512 197 68"
+        sizeHint = "197 68"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Switch
+    currentInput = 1
+    numberOfInputs = 2
+  }
+}
+module Switch {
+  internal  {
+    frame = "749 -115 184 88"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "741 512 197 68"
+        sizeHint = "197 68"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SwitchWhichMask
+    currentInput = 0
+    numberOfInputs = 2
+  }
+}
+module Threshold {
+  internal  {
+    frame = "977 229 96 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "762 127 277 320"
+        sizeHint = "244 320"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Threshold
+    threshold = 250
+    relativeThreshold = FALSE
+    comparisonOperator = Less
+    conditionTrueWriteValue = UserDef
+    userConditionTrueValue = 0
+    conditionFalseWriteValue = UserDef
+    userConditionFalseValue = 1
+  }
+}
+module SubImage {
+  internal  {
+    frame = "981 325 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "638 270 403 552"
+        sizeHint = "403 552"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SubImage
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = FALSE
+    enableBoxClamping = FALSE
+    x = 0
+    sx = 32
+    modifyX = FALSE
+    y = 0
+    sy = 32
+    modifyY = FALSE
+    z = 0
+    sz = 32
+    modifyZ = FALSE
+    c = 0
+    sc = 1
+    modifyC = FALSE
+    t = 0
+    st = 1
+    modifyT = TRUE
+    u = 0
+    su = 1
+    modifyU = FALSE
+    fillValue = 0
+    mode = VoxelStartSize
+    autoApply = FALSE
+  }
+}
+module extractLargestConnectedComponent {
+  internal  {
+    frame = "897 141 256 56"
+    moduleGroupName = ""
+    localMacro = 1
+    windows  {
+      window _default {
+        geometry = "589 246 500 600"
+        sizeHint = "260 224"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "143 228 500 600"
+        sizeHint = "260 224"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = extractLargestConnectedComponent
+  }
+}
+module FastMorphology {
+  internal  {
+    frame = "945 29 160 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "667 341 346 411"
+        sizeHint = "345 411"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "589 246 500 600"
+        sizeHint = "260 224"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = FastMorphology
+    morphologicOperation = Closing
+    xSize = 3
+    ySize = 3
+    zSize = 3
+    cSize = 0
+    tSize = 0
+    uSize = 0
+    useInputMaxValue = FALSE
+    userSetMaxValue = 1
+    autoUpdate = TRUE
+    useGreyScaleMorphology = FALSE
+    boundaryHandling = "Propagate boundary values"
+    boundaryFillValue = 0
+  }
+}
+module Replicate {
+  internal  {
+    frame = "765 -315 152 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "719 441 241 210"
+        sizeHint = "241 210"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Replicate
+    replicationVector = "1.00 1.00 1.00 1.00 31.00 1.00"
+    replicationVectorX = 1
+    replicationVectorY = 1
+    replicationVectorZ = 1
+    replicationVectorC = 1
+    replicationVectorT = 31
+    replicationVectorU = 1
+  }
+}
+module Info {
+  internal  {
+    frame = "989 -271 120 96"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = labelInfo
+  }
+}
+module Info {
+  internal  {
+    frame = "321 -239 128 96"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "546 344 586 404"
+        sizeHint = "586 404"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = imageInfo
+  }
+}
+module GaussSmoothing {
+  internal  {
+    frame = "481 381 160 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "736 403 206 287"
+        sizeHint = "206 287"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = GaussSmoothing
+    sigma = 1
+    unit = voxel
+    xDim = TRUE
+    yDim = TRUE
+    zDim = TRUE
+    cDim = FALSE
+    tDim = FALSE
+    uDim = FALSE
+    useApprox = FALSE
+    autoUpdate = FALSE
+  }
+}
+connections  {
+  AverageSiemensDTI.input0 = GaussSmoothing.output0
+  output.input0 = Switch.output0
+  DecodeVendorSpecificDicomTags.input0 = input.output0
+  Mask.input0 = AverageSiemensDTI.output0
+  Mask.input1 = Replicate.output0
+  Switch.input0 = AverageSiemensDTI.output0
+  Switch.input1 = Mask.output0
+  SwitchWhichMask.input0 = label.output0
+  SwitchWhichMask.input1 = FastMorphology.output0
+  Threshold.input0 = SubImage.output0
+  SubImage.input0 = AverageSiemensDTI.output0
+  extractLargestConnectedComponent.input0 = Threshold.output0
+  FastMorphology.input0 = extractLargestConnectedComponent.output0
+  Replicate.input0 = SwitchWhichMask.output0
+  labelInfo.input0 = SwitchWhichMask.output0
+  imageInfo.input0 = AverageSiemensDTI.output0
+  GaussSmoothing.input0 = DecodeVendorSpecificDicomTags.output0
+}
+networkModel = ""

@@ -1,0 +1,68 @@
+//----------------------------------------------------------------------------------
+//! Macro module SurgeryPlanning
+/*!
+// \file    SurgeryPlanning.script
+// \author  ELHAM TAGHIZADEH
+// \date    2019-02-18
+//
+// 
+*/
+//----------------------------------------------------------------------------------
+
+
+
+Interface {
+  Inputs {}
+  Outputs {
+    Field outView {
+      internalName = ComplexRenderer.self
+      hidden = Yes
+    }
+  }
+  Parameters {
+    Field inImageT1Path {
+      internalName = loadT1.filename
+    }
+    Field inImageDTIPath {
+      internalName = loadDTI.filename
+    }
+    Field inBrainLabelsPath {
+      internalName = loadMask.filename
+    }
+    Field removeCSOs {
+      type = Trigger
+      title = "Remove all contours"
+    }
+  }
+}
+
+
+Commands {
+  source = $(LOCAL)/SurgeryPlanning.py
+  FieldListener removeCSOs { command = onRemoveCSOs}
+}
+
+Window {
+  Vertical {
+    expandX = True
+    expandY = True
+    
+     Splitter {
+       Vertical {
+         preferredWidth = 50
+         Panel {
+           module         = SoGVRVolumeRenderer
+           panel          = subvolume
+         }
+         Button removeCSOs {}
+       }
+       Viewer outView{ 
+        expandX = True
+        expandY = True
+       }
+    }
+    Field inImageT1Path { title = "T1 Image"}
+    Field inImageDTIPath { title = "DTI Image"}
+    Field inBrainLabelsPath { title = "Brain Label"}
+  }
+}

@@ -1,0 +1,17 @@
+Interface  {
+  Inputs  {
+    Field input0 {
+      internalName = ComputeConnectedComponents.input0
+    }
+  }
+  Outputs  {
+    Field output0 {
+      internalName = ConnectedComponentsToImage.output0
+    }
+  }
+  Parameters {
+    Field update {
+      internalName = ComputeConnectedComponents.update
+    }
+  }
+}

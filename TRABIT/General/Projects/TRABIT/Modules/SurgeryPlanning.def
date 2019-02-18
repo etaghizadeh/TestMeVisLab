@@ -1,0 +1,19 @@
+//----------------------------------------------------------------------------------
+//! SurgeryPlanning module definition
+/*!
+// \file    SurgeryPlanning.def
+// \author  ELHAM TAGHIZADEH
+// \date    2019-02-18
+*/
+//----------------------------------------------------------------------------------
+
+
+MacroModule SurgeryPlanning {
+  genre              = ""
+  author             = "ELHAM TAGHIZADEH"
+  comment            = ""
+  keywords           = ""
+  seeAlso            = ""
+   
+  externalDefinition = "$(LOCAL)/SurgeryPlanning.script"
+}

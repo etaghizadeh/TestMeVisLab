@@ -1,0 +1,12 @@
+
+Package {
+  packageGroup = "TRABIT"
+  packageName  = "General"
+
+  owner = "ELHAM TAGHIZADEH"
+  description = ""
+  
+  // This option determines if changed internal networks can simply be safed.
+  // The possible values are "allow", "warn", and "refuse"
+  allowSaveOfInternalNetworks = allow
+}

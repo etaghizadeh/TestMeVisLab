@@ -1,0 +1,98 @@
+// MDL v1 utf8
+mevislabVersion = 3.1.1
+network  {
+  watchlist = ""
+}
+module FilterConnectedComponents {
+  internal  {
+    frame = "917 -171 232 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "194 683 302 207"
+        sizeHint = "302 207"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "844 96 500 600"
+        sizeHint = "260 224"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = FilterConnectedComponents
+    updateMode = AutoClear
+    minClusterSize = 0
+    maxClusterSize = -1
+    clusterSizeInterpretation = Voxels
+    shouldInvertSelection = FALSE
+    selectionMode = Largest
+  }
+}
+module ConnectedComponentsToImage {
+  internal  {
+    frame = "909 -251 248 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "195 243 311 140"
+        sizeHint = "311 140"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "360 119 500 600"
+        sizeHint = "260 224"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ConnectedComponentsToImage
+    updateMode = AutoClear
+    writeToImageMode = FixedValues
+    clusterValue = 1
+    backgroundValue = 0
+    useBoundingBoxOfSelectedClusters = FALSE
+  }
+}
+module ComputeConnectedComponents {
+  internal  {
+    frame = "897 -91 256 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "896 134 424 355"
+        sizeHint = "378 355"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "918 98 500 600"
+        sizeHint = "260 224"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ComputeConnectedComponents
+    updateMode = AutoClear
+    neighborhoodRelation = NBH_3D_26_XYZ
+    backgroundValue = 0
+    useBackgroundValue = TRUE
+    useMask = FALSE
+    clusterMode = IdenticalIntensities
+    userDataDefault = ImageValue
+    similarityToleranceIntensities = 0
+    similarityToleranceVectors = 0.98
+  }
+}
+connections  {
+  FilterConnectedComponents.inClusters = ComputeConnectedComponents.outClusters
+  FilterConnectedComponents.update = ComputeConnectedComponents.update
+  ConnectedComponentsToImage.inClusters = FilterConnectedComponents.outClusters
+  ConnectedComponentsToImage.update = FilterConnectedComponents.update
+}
+networkModel = ""

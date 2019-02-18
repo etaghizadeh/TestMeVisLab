@@ -1,0 +1,159 @@
+//----------------------------------------------------------------------------------
+//! Macro module TRABITWorkshopApp
+/*!
+// \file    TRABITWorkshopApp.script
+// \author  ELHAM TAGHIZADEH
+// \date    2019-02-06
+//
+// 
+*/
+//----------------------------------------------------------------------------------
+
+
+
+Interface {
+  Inputs {}
+  Outputs {
+    Field viewer {
+      internalName = RenderAll.self
+      hidden = yes
+    }
+  }
+  Parameters {
+    Field loadMask {
+      internalName = load_label.filename
+      comment = "select Image for segmentation"
+    }
+    Field loadImageToVisualize {
+      internalName = load_T1.filename
+      comment = "Load the image for visualization"
+    }
+    Field loadDTI {
+      internalName = load_DTI.filename
+      comment = "load DTI"
+    }
+    Field update {
+      type = Trigger
+    }
+    Field deleteAllSeedCSOs {
+      type = Trigger
+    }
+    Field deleteAllTumorCSOs {
+      type = Trigger
+    }
+    Field updateSeedContours {
+      type = Trigger
+      title = "Update Contours"
+    }
+    Field updateTumorContours {
+      type  = Trigger
+      title = "Update Contours"
+    }
+    Field autoApply {
+      type = Bool
+      value = False
+    }
+    Field inDrawMode {
+      type = Enum
+      items {
+        item SegmentingTumor {}
+        item SeedROI {}
+      }
+    }
+    Field FreeHandMode {
+      internalName = SoCSOSplineEditorTumor.useFreehandMode
+    }
+    Field tumorCSOInterpolate {
+      type = Trigger
+    }
+  }
+}
+
+
+Commands {
+  source = $(LOCAL)/TRABITWorkshopApp.py
+  initCommand = init
+  //FieldListener SaveAs { command = saveAll }
+  FieldListener autoApply { command = onAutoApplyChange }
+  FieldListener update { command = updateAll}
+  FieldListener loadMask { command = onNewMaskLoaded }
+  FieldListener loadDTI { command = update }
+  FieldListener ContourSet1Cache.outBase { command = onNewMaskLoaded }
+  FieldListener ContourSet2Cache.outBase { command = onExcludeMarkersChanged }
+  FieldListener updateSeedContours { command = onSeedContourUpdate }
+  FieldListener updateTumorContours { command = onTumorContourUpdate }
+  FieldListener deleteAllSeedCSOs { command = onDeletingSeedContours }
+  FieldListener deleteAllTumorCSOs { command = onDeletingTumorContours }
+  FieldListener inDrawMode { command = onDrawModeChange }
+  FieldListener tumorCSOInterpolate { command = onTumorCSOInterpolation }
+}
+
+
+Window {
+  expandY = 1
+  expandX = 1
+  Vertical {
+    expandY = 1
+      Splitter {
+        expandX = 1
+        expandY = 1
+        Vertical {
+          preferredWidth = 50
+          expandX = 0
+          expandY = 1
+          alignY = Top
+          //
+          Vertical {
+            Panel { 
+              module = SoGVRVolumeRenderer 
+              panel  = subvolume 
+            }
+          }
+          Box "Fiber Filter"{
+            Panel {
+              module = FiberSetFilter3D
+            }
+          }
+          Box "Draw Mode" {
+            Horizontal {
+              ButtonBar inDrawMode {}
+            }
+          }
+          Box "Contour Controls" {
+            Vertical {
+              visibleOn = "* inDrawMode == 'SeedROI' *"
+              Field FreeHandMode {}
+              Button updateSeedContours {}
+              Button deleteAllSeedCSOs { title = "Remove All Contours" accel = Ctrl+R}
+            }
+            Vertical {
+              visibleOn = "* inDrawMode == 'SegmentingTumor' *"
+              Field FreeHandMode {}
+              Button tumorCSOInterpolate { title = "Interpolate Contours"}
+              Button updateTumorContours { title = "Update Segmentation"}
+              Button deleteAllTumorCSOs { title = "Remove All Contours" accel = Ctrl+R}
+            }
+          }
+          Box {
+            alignY = Bottom
+            Horizontal {
+              alignX = Right
+              Field autoApply { title = "Auto apply" }
+              Button update {}
+            }
+          }
+        }
+        Viewer viewer{
+          expandY         = 1
+          expandX         = 1
+        }
+      }
+      Box Files{
+        expandY = 0
+        Field loadMask { browseMode = open}
+        Field loadImageToVisualize {browseMode = open title = "Browse Image (used for Rendering)"}
+        Field loadDTI {browseMode = open title = "Browse Image (DTI)"}
+        //Field SaveAs { browseMode = save }
+      }
+  }
+}

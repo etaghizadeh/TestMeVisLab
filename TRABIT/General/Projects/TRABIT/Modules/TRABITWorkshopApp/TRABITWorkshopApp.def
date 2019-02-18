@@ -1,0 +1,19 @@
+//----------------------------------------------------------------------------------
+//! TRABITWorkshopApp module definition
+/*!
+// \file    TRABITWorkshopApp.def
+// \author  ELHAM TAGHIZADEH
+// \date    2019-02-06
+*/
+//----------------------------------------------------------------------------------
+
+
+MacroModule TRABITWorkshopApp {
+  genre              = ""
+  author             = "ELHAM TAGHIZADEH"
+  comment            = ""
+  keywords           = ""
+  seeAlso            = ""
+   
+  externalDefinition = "$(LOCAL)/TRABITWorkshopApp.script"
+}

@@ -1,0 +1,54 @@
+//----------------------------------------------------------------------------------
+//! Macro module PreprocessDTI
+/*!
+// \file    PreprocessDTI.script
+// \author  ELHAM TAGHIZADEH
+// \date    2019-02-06
+//
+// 
+*/
+//----------------------------------------------------------------------------------
+
+
+
+Interface {
+  Inputs {
+    Field inImage {
+      internalName = input.input0
+      comment = "input DTI"
+    }
+    Field inLabel {
+      internalName = label.input0
+    }
+  }
+  Outputs {
+    Field outImage {
+      internalName = output.output0
+      comment = "output processed DTI"
+    }
+  }
+  Parameters {
+    Field inMaskImage {
+      type = Bool
+      value = True
+    }
+    Field inAutoApply {
+      type = Bool
+      value = False
+    }
+    Field inUpdate {
+      type = Trigger
+      title = "Update"
+    }
+  }
+}
+
+
+Commands {
+  source = $(LOCAL)/PreprocessDTI.py
+  FieldListener inMaskImage { command = onMaskImageChange}
+  FieldListener inImage { command = onInputImageChange}
+  FieldListener inLabel { command = onMaskImageChange}
+  FieldListener inAutoApply { command = onInputImageChange}
+  FieldListener inUpdate { command = Update}
+}
