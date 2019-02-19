@@ -5,7 +5,7 @@ network  {
 }
 module ImageLoad {
   internal  {
-    frame = "121 573 128 72"
+    frame = "-287 693 128 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -39,7 +39,7 @@ module ImageLoad {
 }
 module ImageLoad {
   internal  {
-    frame = "1201 597 128 72"
+    frame = "481 669 128 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -73,7 +73,7 @@ module ImageLoad {
 }
 module ImageLoad {
   internal  {
-    frame = "945 589 128 72"
+    frame = "961 685 128 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -107,7 +107,7 @@ module ImageLoad {
 }
 module Mask {
   internal  {
-    frame = "133 269 120 72"
+    frame = "-275 565 120 72"
     moduleGroupName = ""
     showNetworkPanel = true
   }
@@ -121,7 +121,7 @@ module Mask {
 }
 module Mask {
   internal  {
-    frame = "1165 309 120 72"
+    frame = "965 293 120 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -142,7 +142,7 @@ module Mask {
 }
 module Reformat {
   internal  {
-    frame = "1309 517 120 56"
+    frame = "1109 501 120 56"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -188,7 +188,7 @@ module Reformat {
 }
 module Replicate {
   internal  {
-    frame = "1245 405 152 72"
+    frame = "1045 389 152 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -212,7 +212,7 @@ module Replicate {
 }
 module Info {
   internal  {
-    frame = "1081 389 128 88"
+    frame = "881 373 128 88"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -229,7 +229,7 @@ module Info {
 }
 module SoViewportRegion {
   internal  {
-    frame = "-275 -235 136 56"
+    frame = "-675 -219 136 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -271,7 +271,7 @@ module SoViewportRegion {
 }
 module SoOrthoView2D {
   internal  {
-    frame = "249 -155 128 56"
+    frame = "-183 -147 128 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -287,7 +287,7 @@ module SoOrthoView2D {
     boundingBoxCaching = AUTO
     renderCulling = AUTO
     pickCulling = AUTO
-    worldPosition = "16.6029243469238 26.487024307251 60.4114036560059"
+    worldPosition = "-6.11690473556519 23.8335018157959 48.3376159667969"
     viewerId1 = viewer1
     viewerId2 = viewer2
     viewerId3 = viewer3
@@ -305,13 +305,13 @@ module SoOrthoView2D {
     minSliceZoomKeyboard = 1
     sliceOrigin1 = "0.00030517578125 3.0517578125e-05"
     sliceOrigin2 = "-0.000152587890625 -0.002532958984375"
-    sliceOrigin3 = "-0.0017852783203125 0.0062255859375"
+    sliceOrigin3 = "-0.00199127197265625 0.0067138671875"
     synchronizePanning = FALSE
     keepSlicesInView = FALSE
     viewingCenter = "-1 -1 -1"
-    viewingCenter1 = "20.8978881835938 -11.6309967041016 -8.28252410888672"
+    viewingCenter1 = "-1.94307708740234 -14.327751159668 -8.14838409423828"
     viewingCenter2 = "-0.974967956542969 24.3825836181641 -8.08901214599609"
-    viewingCenter3 = "3.93305969238281 -13.7936248779297 60.4217071533203"
+    viewingCenter3 = "3.85875701904297 -13.7732238769531 48.2149200439453"
     invertKeyPanningDirections = FALSE
     extraViewSize = "0.666000008583069 0.666000008583069"
     margin = "2 2"
@@ -349,7 +349,7 @@ module SoOrthoView2D {
 }
 module SoCameraInteraction {
   internal  {
-    frame = "-59 -35 152 56"
+    frame = "-459 -19 152 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -374,7 +374,7 @@ module SoCameraInteraction {
 }
 module SoGVRVolumeRenderer {
   internal  {
-    frame = "-99 133 168 56"
+    frame = "-499 149 168 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -478,7 +478,7 @@ module SoGVRVolumeRenderer {
 }
 module View2DExtensions {
   internal  {
-    frame = "121 -35 144 56"
+    frame = "-279 -19 144 56"
     moduleGroupName = ""
     windows  {
       window _automatic {
@@ -646,7 +646,7 @@ LUT C/W: $(numInput07) / $(numInput08)"
 }
 module SoGroup {
   internal  {
-    frame = "-283 -155 152 72"
+    frame = "-683 -139 152 72"
     moduleGroupName = ""
   }
   fields  {
@@ -655,7 +655,7 @@ module SoGroup {
 }
 module SoBackground {
   internal  {
-    frame = "-435 -59 120 56"
+    frame = "-835 -43 120 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -675,7 +675,7 @@ module SoBackground {
 }
 module DecomposeVector3 {
   internal  {
-    frame = "-7 -243 144 72"
+    frame = "-407 -227 144 72"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -692,7 +692,7 @@ module DecomposeVector3 {
 }
 module DecomposeVector3 {
   internal  {
-    frame = "-7 -171 144 72"
+    frame = "-407 -155 144 72"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -709,7 +709,7 @@ module DecomposeVector3 {
 }
 module SoSeparator {
   internal  {
-    frame = "225 -299 128 56"
+    frame = "-231 -467 128 56"
     moduleGroupName = ""
     windows  {
       window _viewer {
@@ -729,7 +729,7 @@ module SoSeparator {
 }
 module ChangeLUTColor {
   internal  {
-    frame = "-235 29 136 56"
+    frame = "-635 45 136 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -749,7 +749,7 @@ module ChangeLUTColor {
 }
 module RampLUT {
   internal  {
-    frame = "-211 85 88 56"
+    frame = "-611 101 88 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -762,12 +762,12 @@ module RampLUT {
   fields  {
     instanceName = RampLUT
     relative = TRUE
-    center = 0.257500171661377
-    width = 0.472500026226044
+    center = 0.5
+    width = 0.5
     startColor = "0 0 0"
     endColor = "1 1 1"
-    alphaCenter = 0.257500171661377
-    alphaWidth = 0.472500026226044
+    alphaCenter = 0.5
+    alphaWidth = 0.5
     alphaStart = 0
     alphaEnd = 1
     useRelativeIfNoInputImage = FALSE
@@ -777,7 +777,7 @@ module RampLUT {
 }
 module SoMLLUT {
   internal  {
-    frame = "-211 -43 88 56"
+    frame = "-611 -27 88 56"
     moduleGroupName = ""
   }
   fields  {
@@ -787,7 +787,7 @@ module SoMLLUT {
 }
 module SoMouseGrabber {
   internal  {
-    frame = "-395 85 136 56"
+    frame = "-795 101 136 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -828,7 +828,7 @@ module SoMouseGrabber {
 }
 module SoRenderArea {
   internal  {
-    frame = "-67 -411 136 72"
+    frame = "-459 -563 136 72"
     moduleGroupName = ""
     windows  {
       window _viewer {
@@ -873,7 +873,7 @@ module SoRenderArea {
 }
 module DTIInfo {
   internal  {
-    frame = "1065 29 80 56"
+    frame = "865 13 80 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -923,7 +923,7 @@ module DTIInfo {
 }
 module DiffusionTensorAnalysis {
   internal  {
-    frame = "1141 -43 168 56"
+    frame = "941 -59 168 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -980,7 +980,7 @@ module DiffusionTensorAnalysis {
 }
 module DecodeVendorSpecificDicomTags {
   internal  {
-    frame = "1109 245 232 56"
+    frame = "909 229 232 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -996,7 +996,7 @@ module DecodeVendorSpecificDicomTags {
 }
 module TensorTractography {
   internal  {
-    frame = "1173 -123 152 56"
+    frame = "965 -139 152 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -1036,8 +1036,8 @@ module TensorTractography {
 }
 module CSOManager {
   internal  {
-    frame = "541 213 120 56"
-    moduleGroupName = ""
+    frame = "561 269 144 72"
+    moduleGroupName = SeedContouring
     showNetworkPanel = true
     windows  {
       window _default {
@@ -1114,7 +1114,7 @@ module CSOManager {
     listSingleRemoveEmptyGroupHandling = RemoveAlways
     listDefaultRemoveEmptyGroupHandling = RemoveAlways
     enableUndoRedo = TRUE
-    numUndos = 4
+    numUndos = 2
     numRedos = 0
     undoStackLimit = 16
     useSelectionCSONotification = FALSE
@@ -1156,8 +1156,8 @@ module CSOManager {
 }
 module SoView2DCSOExtensibleEditor {
   internal  {
-    frame = "513 -83 208 56"
-    moduleGroupName = ""
+    frame = "561 -27 208 56"
+    moduleGroupName = SeedContouring
     windows  {
       window _default {
         geometry = "2202 367 394 388"
@@ -1205,8 +1205,8 @@ module SoView2DCSOExtensibleEditor {
 }
 module SoCSOSplineEditor {
   internal  {
-    frame = "345 13 144 56"
-    moduleGroupName = ""
+    frame = "449 77 144 56"
+    moduleGroupName = SeedContouring
     windows  {
       window _default {
         geometry = "1100 456 313 380"
@@ -1259,8 +1259,8 @@ module SoCSOSplineEditor {
 }
 module SoCSOVisualizationSettings {
   internal  {
-    frame = "321 101 192 56"
-    moduleGroupName = ""
+    frame = "425 165 192 56"
+    moduleGroupName = SeedContouring
     windows  {
       window _default {
         geometry = "792 315 351 629"
@@ -1382,8 +1382,8 @@ module SoCSOVisualizationSettings {
 }
 module CSOConvertToImage {
   internal  {
-    frame = "637 69 152 56"
-    moduleGroupName = ""
+    frame = "637 117 152 56"
+    moduleGroupName = SeedContouring
     windows  {
       window _default {
         geometry = "768 441 399 372"
@@ -1431,7 +1431,7 @@ module CSOConvertToImage {
 }
 module SoFiberVis {
   internal  {
-    frame = "1145 -251 96 56"
+    frame = "1009 -227 96 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -1469,7 +1469,7 @@ module SoFiberVis {
 }
 module SoSeparator {
   internal  {
-    frame = "-35 37 104 56"
+    frame = "-435 53 104 56"
     moduleGroupName = ""
   }
   fields  {
@@ -1482,7 +1482,7 @@ module SoSeparator {
 }
 module AverageSiemensDTI {
   internal  {
-    frame = "1149 21 152 56"
+    frame = "949 5 152 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -1504,7 +1504,7 @@ module AverageSiemensDTI {
 }
 module GaussSmoothing {
   internal  {
-    frame = "1145 85 160 72"
+    frame = "945 69 160 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -1531,7 +1531,7 @@ module GaussSmoothing {
 }
 module ImagePropertyConvert {
   internal  {
-    frame = "1145 165 160 72"
+    frame = "945 149 160 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -1588,6 +1588,517 @@ module ImagePropertyConvert {
     autoApply = TRUE
   }
 }
+module CSOManager {
+  internal  {
+    frame = "17 261 144 72"
+    moduleGroupName = TumorContouring
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2044 269 711 585"
+        sizeHint = "711 585"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOManager1
+    workDirectlyOnInputCSOList = FALSE
+    updateCsoDisplayTree = TRUE
+    updateGroupDisplayTree = TRUE
+    selectLastCreatedGroup = TRUE
+    selectionColoringMode = SelectionColorModeFixed
+    selectionLineWidthMode = SelectionLineWidthWiden
+    selectionBrightenColor = 0.2
+    selectionFixedColor = "1 1 0.600000023841858"
+    selectionWidenLineWidth = 1
+    selectionFixedLineWidth = 2
+    selectedSeedPointColoringMode = SelectedSeedPointColorModeFixed
+    selectedSeedPointSizeMode = SelectedSeedPointSizeModeEnlarge
+    selectedSeedPointBrightenColor = 0.5
+    selectedSeedPointFixedColor = "0 1 0"
+    selectedSeedPointEnlargeSize = 1
+    selectedSeedPointSize = 1
+    csoDefaultLabel = ""
+    csoDefaultLabelAddUniqueId = FALSE
+    csoDefaultLabelUniqueIdFormat = " (%i)"
+    csoDefaultLabelAddUniqueIdAlways = FALSE
+    csoDefaultDescription = ""
+    csoDefaultShowState = TRUE
+    csoDefaultVoxelizeState = TRUE
+    csoDefaultEditableState = TRUE
+    groupSingleDeleteGroupCSOHandling = RemoveIfInNoGroup
+    groupDefaultLabel = ""
+    groupDefaultLabelAddUniqueId = FALSE
+    groupDefaultLabelUniqueIdFormat = " (%i)"
+    groupDefaultLabelAddUniqueIdAlways = FALSE
+    groupDefaultDescription = ""
+    groupDefaultUseTimePointIndex = FALSE
+    groupDefaultTimePointIndex = 0
+    groupDefaultUseShowState = FALSE
+    groupDefaultShowState = TRUE
+    groupDefaultUseVoxelizeState = FALSE
+    groupDefaultVoxelizeState = TRUE
+    groupDefaultUseEditableState = FALSE
+    groupDefaultEditableState = TRUE
+    groupDefaultUsePathPointStyle = FALSE
+    groupDefaultPathPointStyle = LineStyleSolid
+    groupDefaultUsePathPointWidth = FALSE
+    groupDefaultPathPointWidth = 1
+    groupDefaultUsePathPointColor = FALSE
+    groupDefaultPathPointColor = "1 1 1"
+    groupDefaultUsePathPointAlpha = FALSE
+    groupDefaultPathPointAlpha = 1
+    groupDefaultUseSeedPointStyle = FALSE
+    groupDefaultSeedPointStyle = MarkerModeRect
+    groupDefaultUseSeedPointSize = FALSE
+    groupDefaultSeedPointSize = 3
+    groupDefaultUseSeedPointColor = FALSE
+    groupDefaultSeedPointColor = "0 1 0"
+    groupDefaultUseSeedPointAlpha = FALSE
+    groupDefaultSeedPointAlpha = 1
+    groupDefaultUseVoxelWriteMode = FALSE
+    groupDefaultVoxelWriteMode = VoxelWriteModeModule
+    groupDefaultUseVoxelWriteValue = FALSE
+    groupDefaultVoxelWriteValue = 1024
+    groupDefaultNumMaximumCSOs = 0
+    groupDefaultOverflowHandling = RemoveFirst
+    groupDefaultRemoveFromGroupHandling = RemoveIfInNoGroup
+    groupDefaultDeleteGroupCSOHandling = RemoveIfInNoGroup
+    listSingleRemoveEmptyGroupHandling = RemoveAlways
+    listDefaultRemoveEmptyGroupHandling = RemoveAlways
+    enableUndoRedo = TRUE
+    numUndos = 16
+    numRedos = 0
+    undoStackLimit = 16
+    useSelectionCSONotification = FALSE
+    useSelectionGroupNotification = FALSE
+    useFinishedCSONotification = FALSE
+    useFinishedGroupNotification = FALSE
+    useCSOMovedNotification = FALSE
+    useRepaintNotification = FALSE
+    useInteractionInitNotification = FALSE
+    useStartNewCSONotification = FALSE
+    enableSelectionNotification = TRUE
+    enableFinishedNotification = TRUE
+    enableCSOMovedNotification = TRUE
+    enableRepaintNotification = TRUE
+    outputApplicationEventsDebug = FALSE
+    csoTreeView = ""
+    groupTreeView = ""
+    numSelectedCSOs = 0
+    numSelectedGroups = 0
+    selectedCSOsGroupIds = ""
+    csoTabSelected = FALSE
+    groupTabSelected = FALSE
+    selectionTabSelected = FALSE
+    notificationTabSelected = FALSE
+    defaultTabSelected = FALSE
+    csoCommonTabSelected = TRUE
+    csoVisualsTabSelected = FALSE
+    groupCommonTabSelected = TRUE
+    groupVisualsTabSelected = FALSE
+    groupMiscTabSelected = FALSE
+    notificationControlTabSelected = TRUE
+    notificationOutputCSOTabSelected = FALSE
+    notificationOutputGroupTabSelected = FALSE
+    defaultCSOCommonTabSelected = TRUE
+    defaultGroupCommonTabSelected = FALSE
+    defaultGroupVisualsTabSelected = FALSE
+    defaultGroupMiscTabSelected = FALSE
+  }
+}
+module SoView2DCSOExtensibleEditor {
+  internal  {
+    frame = "13 -91 216 56"
+    moduleGroupName = TumorContouring
+    windows  {
+      window _default {
+        geometry = "2202 367 394 388"
+        sizeHint = "394 388"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DCSOExtensibleEditor1
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 16
+    needsValidVoxel = TRUE
+    button1 = PRESSED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    creatorExtensionId = __default
+    alwaysCreateNewCSOs = FALSE
+    alwaysModifyExistingCSOs = FALSE
+    keyCommandsEnabled = TRUE
+    enableRemoveAll = FALSE
+    interactOnlyWithSelectedCSO = FALSE
+    renderLeftOverCSOsWithDefaultRenderer = TRUE
+    allowSelectionWithDefaultRenderer = TRUE
+    renderCSOsOnImagesDependingOnCreationMode = ON_ALL_IMAGES
+    updateCSOIdUnderMouseCursor = FALSE
+    updateImageStatisticsOnFinishInteraction = FALSE
+  }
+}
+module SoCSOSplineEditor {
+  internal  {
+    frame = "-22 85 152 56"
+    moduleGroupName = TumorContouring
+    windows  {
+      window _default {
+        geometry = "1100 456 313 380"
+        sizeHint = "313 380"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCSOSplineEditor1
+    extensionId = spline
+    allowCreation = TRUE
+    allowModification = TRUE
+    allowSeedPointInteraction = TRUE
+    shouldRender = TRUE
+    selectionCursor = POINTING_HAND_CURSOR
+    interactionForbiddenCursor = FORBIDDEN_CURSOR
+    moduleCreatorId = 0
+    moduleCreatorString = SoCSOSplineEditor
+    labelPrefixString = CSO
+    requirePointerPositionMovementToCreateCSO = FALSE
+    pointerPositionEpsilonForCreatingCSO = 1
+    createCursor = CROSS_FREEFORM_CURSOR
+    moveAllCursor = MOVE_ALL_CURSOR
+    moveSeedCursor = CROSS_CURSOR
+    shouldEmptyGroupBeforeGenerating = TRUE
+    addCSOToGroupMode = GROUP_NONE
+    addCSOToGroupLabel = ""
+    addCSOToGroupId = -1
+    defaultPathPointStyle = PATH_POINTS_STYLE_SOLID
+    defaultPathPointWidth = 1
+    defaultPathPointColor = "1 1 1"
+    defaultPathPointAlpha = 1
+    defaultSeedPointStyle = SEED_POINT_STYLE_RECTANGLE
+    defaultSeedPointSize = 3
+    defaultSeedPointColor = "1 1 1"
+    defaultSeedPointAlpha = 1
+    defaultVoxelWriteMode = VOXEL_WRITE_MODULE
+    defaultVoxelWriteValue = 1024
+    generateSeedPointsWhileDragging = FALSE
+    insertSeedPointByClickingOnPathPointList = TRUE
+    insertSeedPointCursor = CROSS_PLUS_CURSOR
+    canCloseCursor = CROSS_LINK_CURSOR
+    useFreehandMode = TRUE
+    shouldCloseFreehandOnRelease = TRUE
+    doubleClickMode = CSO_SPLINE_EDITOR_DOUBLE_CLICK_FINISH
+    pointDensityMode = DENSITY_MIN_VOXEL_EXTENT
+    densityFactor = 1
+  }
+}
+module SoCSOVisualizationSettings {
+  internal  {
+    frame = "-46 173 200 56"
+    moduleGroupName = TumorContouring
+    windows  {
+      window _default {
+        geometry = "792 315 351 629"
+        sizeHint = "351 629"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCSOVisualizationSettings1
+    autoApply = TRUE
+    shouldUseAntiAliasing = TRUE
+    globalAlphaFactor = 1
+    showCSOsOnAllTimePoints = FALSE
+    overwriteCurrentTimePoint = FALSE
+    newCurrentTimePoint = 0
+    orientationFilterMode = ORIENTATION_MODE_ALL
+    parallelThicknessMode = PARALLEL_THICKNESS_MODE_ABSOLUTE_MM
+    showParallelThickness = 0.2
+    ghostingDepthInVoxel = 0
+    voxelSlabAugment = 0
+    shouldRenderShadow = FALSE
+    shadowColor = "0 0 0"
+    shadowAlpha = 1
+    shadowLineWidth = 1
+    shouldRenderSeedPoints = TRUE
+    shouldRenderPathPoints = TRUE
+    shouldOverwriteSeedPointsSettings = TRUE
+    shouldUsePathPointColorForSeedPoints = FALSE
+    shouldRenderSeedPointsOnlyForSelectedCSOs = FALSE
+    shouldUsePathPointColorForSeedPoints = FALSE
+    shouldUseStylePaletteLookUpForSeedPoints = FALSE
+    stylePaletteLookUpSeedPoints = CSOId
+    useSeedPointOnSliceStyle = TRUE
+    useSeedPointOnSliceSize = FALSE
+    useSeedPointOnSliceColor = FALSE
+    useSeedPointOnSliceAlpha = FALSE
+    seedPointOnSliceStyle = SEED_POINT_STYLE_NONE
+    seedPointOnSliceSize = 3
+    seedPointOnSliceColor = "1 1 1"
+    seedPointOnSliceAlpha = 1
+    useSeedPointBelowSliceStyle = TRUE
+    useSeedPointBelowSliceSize = FALSE
+    useSeedPointBelowSliceColor = FALSE
+    useSeedPointBelowSliceAlpha = FALSE
+    seedPointBelowSliceStyle = SEED_POINT_STYLE_NONE
+    seedPointBelowSliceSize = 3
+    seedPointBelowSliceColor = "1 1 1"
+    seedPointBelowSliceAlpha = 1
+    useSeedPointAboveSliceStyle = TRUE
+    useSeedPointAboveSliceSize = FALSE
+    useSeedPointAboveSliceColor = FALSE
+    useSeedPointAboveSliceAlpha = FALSE
+    seedPointAboveSliceStyle = SEED_POINT_STYLE_NONE
+    seedPointAboveSliceSize = 3
+    seedPointAboveSliceColor = "1 1 1"
+    seedPointAboveSliceAlpha = 1
+    shouldOverwritePathPointsSettings = TRUE
+    shouldUseStylePaletteLookUpForPathPoints = FALSE
+    stylePaletteLookUpPathPoints = CSOId
+    usePathPointsOnSliceLineStyle = TRUE
+    usePathPointsOnSliceLineWidth = FALSE
+    usePathPointsOnSliceColor = TRUE
+    usePathPointsOnSliceAlpha = TRUE
+    pathPointsOnSliceLineStyle = PATH_POINTS_STYLE_SOLID
+    pathPointsOnSliceLineWidth = 1
+    pathPointsOnSliceColor = "0.894117653369904 0.905882358551025 0.0862745121121407"
+    pathPointsOnSliceAlpha = 1
+    usePathPointsBelowSliceLineStyle = TRUE
+    usePathPointsBelowSliceLineWidth = FALSE
+    usePathPointsBelowSliceColor = FALSE
+    usePathPointsBelowSliceAlpha = TRUE
+    pathPointsBelowSliceLineStyle = PATH_POINTS_STYLE_DASHED
+    pathPointsBelowSliceLineWidth = 1
+    pathPointsBelowSliceColor = "1 1 1"
+    pathPointsBelowSliceAlpha = 0.5
+    usePathPointsAboveSliceLineStyle = TRUE
+    usePathPointsAboveSliceLineWidth = FALSE
+    usePathPointsAboveSliceColor = FALSE
+    usePathPointsAboveSliceAlpha = TRUE
+    pathPointsAboveSliceLineStyle = PATH_POINTS_STYLE_DASHED
+    pathPointsAboveSliceLineWidth = 1
+    pathPointsAboveSliceColor = "1 1 1"
+    pathPointsAboveSliceAlpha = 0.5
+    shouldOverwriteSelectionSettings = TRUE
+    selectedPathPointsColorMode = HIGHLIGHT_MODE_RELATIVE
+    selectedPathPointsLineWidthMode = HIGHLIGHT_MODE_RELATIVE
+    selectedPathPointsBrightenValue = 1.2
+    selectedPathPointsFixedColor = "1 1 0"
+    selectedPathPointsAlpha = 1
+    selectedPathPointsWidenValue = 1
+    selectedPathPointsFixedLineWidth = 2
+    selectedSeedPointColorMode = HIGHLIGHT_MODE_RELATIVE
+    selectedSeedPointSizeMode = HIGHLIGHT_MODE_RELATIVE
+    selectedSeedPointBrightenValue = 1.2
+    selectedSeedPointFixedColor = "1 1 0"
+    selectedSeedPointAlpha = 1
+    selectedSeedPointEnlargeValue = 1
+    selectedSeedPointFixedSize = 2
+    enableMouseOverHighlighting = TRUE
+    mouseOverPathPointsColorMode = HIGHLIGHT_MODE_RELATIVE
+    mouseOverPathPointsLineWidthMode = HIGHLIGHT_MODE_RELATIVE
+    mouseOverPathPointsBrightenValue = 1.2
+    mouseOverPathPointsFixedColor = "1 1 0"
+    mouseOverPathPointsAlpha = 1
+    mouseOverPathPointsWidenValue = 1
+    mouseOverPathPointsFixedLineWidth = 2
+    mouseOverSeedPointColorMode = HIGHLIGHT_MODE_RELATIVE
+    mouseOverSeedPointSizeMode = HIGHLIGHT_MODE_RELATIVE
+    mouseOverSeedPointBrightenValue = 1.2
+    mouseOverSeedPointFixedColor = "1 1 0"
+    mouseOverSeedPointAlpha = 1
+    mouseOverSeedPointEnlargeValue = 1
+    mouseOverSeedPointFixedSize = 2
+    visibleByMode = CSOs
+    visibleIdList = ""
+    invertVisibility = FALSE
+  }
+}
+module CSOConvertToImage {
+  internal  {
+    frame = "201 -19 160 56"
+    moduleGroupName = TumorContouring
+    windows  {
+      window _default {
+        geometry = "768 441 399 372"
+        sizeHint = "399 372"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOConvertToImage1
+    updateMode = AutoUpdate
+    autoApply = TRUE
+    foregroundValue = 4095
+    backgroundValue = 0
+    useImageValues = FALSE
+    fillSurface = TRUE
+    copyInputImage = FALSE
+    listenInteractionNotifications = FALSE
+    listenInteractionFinished = TRUE
+    boundingBoxMargin = 0
+    useAlwaysForegroundValueOfModule = FALSE
+    voxelizeCSO = TRUE
+    removeOutsideVoxels = FALSE
+    useAntiAliasing = FALSE
+    useGlobalSubsample = TRUE
+    antiAliasSubSample = 4
+    antiAliasSubSampleX = 4
+    antiAliasSubSampleY = 4
+    antiAliasSubSampleZ = 4
+    removeBorderVoxelsByVolume = FALSE
+    removeBorderVoxelVolumeThreshold = 0.6
+    ignoreTimePoints = FALSE
+    drawToAllTimePoints = FALSE
+    createMarkerList = TRUE
+    markerGenerationMode = CSOMarkerGenerationModeFromVoxels
+    outputTypeMode = Automatic
+    createCSOVoxelSet = FALSE
+    voxelSetMode = VoxelSetModeReplaceMax
+    generationMode = GenerationModeComplete
+    useFastModeForParallelCSOs = TRUE
+    numThreads = 1
+    timePointIndexForBoundingBox = -1
+    removeOutsideVoxelsMode = Disabled
+  }
+}
+module SoSwitch {
+  internal  {
+    frame = "105 -315 128 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2314 516 171 91"
+        sizeHint = "171 91"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoSwitch
+    whichChild = 0
+  }
+}
+module CSOSliceInterpolator {
+  internal  {
+    frame = "221 149 152 56"
+    moduleGroupName = TumorContouring
+    windows  {
+      window _default {
+        geometry = "1610 217 369 500"
+        sizeHint = "369 500"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOSliceInterpolator
+    updateMode = Off
+    autoApply = FALSE
+    emptyGroupBeforeGeneration = TRUE
+    addCSOToGroupMode = AddToGroupByLabel
+    addCSOToGroupWithLabel = ""
+    addCSOToGroupWithId = -1
+    id = 0
+    pathPointStyle = LineStyleDashed
+    pathPointWidth = 1
+    pathPointColor = "1 1 0"
+    pathPointAlpha = 1
+    seedPointStyle = MarkerModeRect
+    seedPointSize = 2
+    seedPointColor = "0 1 0"
+    seedPointAlpha = 1
+    voxelWriteMode = VoxelWriteModeModule
+    voxelWriteValue = 1024
+    sliceOrientation = SliceOrientationXY
+    timePointIndex = 0
+    smoothingMode = SmoothingModeSplineApproximation
+    useSmooth = FALSE
+    numSmoothPasses = 10
+    smoothFactor = 0.1
+    smoothRange = 1
+    reduceCSOsToOnlyOneSeedPoint = FALSE
+    resolveEmbeddedCSOs = FALSE
+    maxNumPointsForFunction = 300
+    splineQuality = 0.69999999
+    handleSlicesWithOriginalCSOs = OriginalSliceHandlingSkip
+    groupHandling = GroupHandlingUseGeneratorSettings
+    removeOriginalCSOs = FALSE
+  }
+}
+module OrthoReformat3 {
+  internal  {
+    frame = "105 493 128 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = OrthoReformat3
+    useGlobalInputImage = TRUE
+    applyModifyPatientOrientationMatrix = FALSE
+    modifyPatientOrientationMatrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+  }
+}
+module Switch {
+  internal  {
+    frame = "109 389 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2301 527 197 68"
+        sizeHint = "197 68"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Switch
+    currentInput = 0
+    numberOfInputs = 3
+  }
+}
+module Info {
+  internal  {
+    frame = "-71 397 64 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "2102 359 594 404"
+        sizeHint = "594 404"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Info1
+  }
+}
 connections  {
   Mask.input0 = loadT1.output0
   Mask.input1 = loadMask.output0
@@ -1610,7 +2121,7 @@ connections  {
   3DView.children = "SoBackground.self SoMouseGrabber.self SoMLLUT.self SoCameraInteraction.self"
   lowerLeft.v = SoOrthoView2D1.extraViewLowerLeft
   upperRight.v = SoOrthoView2D1.extraViewUpperRight
-  SoSeparator1.children = "View2DExtensions1.outNode SoView2DCSOExtensibleEditor.self SoOrthoView2D1.self"
+  SoSeparator1.children = "View2DExtensions1.outNode SoSwitch.self SoOrthoView2D1.self"
   ChangeLUTColor.inLUT = RampLUT.outLUT
   RampLUT.center = SoMouseGrabber.y
   RampLUT.width = SoMouseGrabber.x
@@ -1634,5 +2145,44 @@ connections  {
   AverageSiemensDTI.input0 = GaussSmoothing.output0
   GaussSmoothing.input0 = ImagePropertyConvert.output0
   ImagePropertyConvert.input0 = DecodeVendorSpecificDicomTags.output0
+  SoView2DCSOExtensibleEditor1.inCSOList = CSOManager1.outCSOList
+  SoView2DCSOExtensibleEditor1.inExtensions = SoCSOSplineEditor1.self
+  SoCSOSplineEditor1.inVisualizationSettings = SoCSOVisualizationSettings1.outVisualizationSettings
+  CSOConvertToImage1.inCSOList = CSOManager1.outCSOList
+  SoSwitch.children = "SoView2DCSOExtensibleEditor1.self SoView2DCSOExtensibleEditor.self"
+  CSOSliceInterpolator.input0 = Switch.output0
+  CSOSliceInterpolator.inputCSOList = CSOManager1.outCSOList
+  OrthoReformat3.input0 = Mask.output0
+  Switch.input0 = OrthoReformat3.output0
+  Switch.input1 = OrthoReformat3.output1
+  Switch.input2 = OrthoReformat3.output2
+  Info1.input0 = loadT1.output0
 }
-networkModel = ""
+networkModel  {
+  parentItems  {
+    0  {
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 101
+        objectName = SeedContouring
+        parentUniqueId = 0
+        color  {
+          r = 140
+          g = 140
+          b = 140
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 130
+        objectName = TumorContouring
+        parentUniqueId = 0
+        color  {
+          r = 140
+          g = 140
+          b = 140
+          a = 40
+        }
+      }
+    }
+  }
+}

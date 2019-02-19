@@ -33,13 +33,29 @@ Interface {
       type = Trigger
       title = "Remove all contours"
     }
+    Field interpolate {
+      type  = Trigger
+      title = "Interpolate Contours"
+    }
+    
+    Field contourMode {
+      type = Enum
+      items {
+        item tensorSeeds {}
+        item tumorSegmentation {}
+      }
+      
+    }
   }
 }
 
 
 Commands {
   source = $(LOCAL)/SurgeryPlanning.py
+  //importPath = $(MLAB_TRABIT_General)/
   FieldListener removeCSOs { command = onRemoveCSOs}
+  FieldListener contourMode { command = onContourModeChange }
+  FieldListener interpolate { command = onInterpolatingContours }
 }
 
 Window {
@@ -55,6 +71,8 @@ Window {
            panel          = subvolume
          }
          Button removeCSOs {}
+         ButtonBar contourMode {}
+         Button interpolate { title = "Interpolate Contours"}
        }
        Viewer outView{ 
         expandX = True
